@@ -7,7 +7,7 @@ import useToggle from "../hooks/useToggle"
 const sidebarWidth = 220;
 
 const SideBar = ({ children }) => {
-  const [open, toggleOpen] = useToggle(false);
+  const [open, toggleOpen] = useToggle(true);
 
   const handleToggleOpen = useCallback(() => toggleOpen(prev => !prev), [toggleOpen]);
 
