@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.MuiAppBar-colorPrimary {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  color: #1a2027 !important ;
+}
+
+.main_container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  padding-top: 40px;
+}
+
+.form_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0 40px 240px;
+}
+
+.results_container {
+  min-height: 700px;
+  padding-left: 240px;
+  min-width: 900px;
+  max-height: 70vh;
+  max-width: 70vw;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 150%;
+}
+
+.pagination_container {
+  position: absolute;
+  bottom: 0px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+}
+
+.toggle_sidebar_button {
+  z-index: 999999999 !important;
+  position: absolute !important;
+  bottom: 50px !important;
+  right: 50px !important;
+}
+
+
