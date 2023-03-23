@@ -15,10 +15,12 @@ html:focus-within {
 body {
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
+  min-width: 100vw;
 }
 
 #root {
   min-height: 100vh;
+  min-width: 100vw;
 }
 
 .MuiAppBar-colorPrimary {
@@ -32,6 +34,8 @@ body {
   height: 100%;
   flex-direction: column;
   padding-top: 40px;
+  position: relative;
+  bottom: 0;
 }
 
 .form_container {
@@ -63,9 +67,9 @@ body {
 
 .toggle_sidebar_button {
   z-index: 999999999 !important;
-  position: absolute !important;
-  bottom: 50px !important;
-  right: 50px !important;
+  position: fixed !important;
+  bottom: 16px !important;
+  right: 16px !important;
 }
 
 
