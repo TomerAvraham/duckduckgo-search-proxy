@@ -11,6 +11,7 @@ To run the code, follow these steps:
 3. Create a `.env` file in the `duckduckgo-proxy` directory with the following content:
 
 PORT=<PORT_NUMBER>
+
 DDG_API_URL=http://api.duckduckgo.com
 
 Replace `<PORT_NUMBER>` with the port number you want to use for the API proxy.
