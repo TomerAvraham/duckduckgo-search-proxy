@@ -49,6 +49,6 @@ The API proxy is built with Node.js and Express, which handles incoming requests
 
 ### Frontend
 
-The UI is built with React and Redux Toolkit. The UI consists of a search bar, a list of search results, and a sidebar showing past queries. When the user submits a search query, the UI sends an HTTP request to the API proxy and displays the results in the list. The UI supports paging, where the user can navigate through the search results, and highlighting search terms in the results.
+The UI is built with React and Redux Toolkit, using the Material-UI (Mui) framework for styling and UI components. The UI consists of a search bar, a list of search results, and a sidebar showing past queries. When the user submits a search query, the UI sends an HTTP request to the API proxy and displays the results in the list. The UI supports paging, where the user can navigate through the search results, and highlighting search terms in the results.
 
-The sidebar shows a list of past queries, and when the user clicks on a past query, it populates the search input with that query and repeats the API request to show the results below the search input.
+The sidebar shows a list of past queries, and when the user clicks on a past query, it populates the search input with that query and repeats the API request to show the results below the search input. The sidebar also uses Mui components for displaying the list of past queries and handling click events.

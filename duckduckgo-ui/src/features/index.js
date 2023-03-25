@@ -1,6 +1,6 @@
-import Highlight from "./highlight";
-import Pagination from "./pagination";
-import QueryHistory from "./queryHistory";
-import Search from "./search";
+import Highlight from "./highlight/Highlight";
+import Pagination from "./pagination/Pagination";
+import QueryHistory from "./queryHistory/QueryHistory";
+import Search from "./search/Search";
 
 export { Highlight, Pagination, QueryHistory, Search };
