@@ -1,22 +1,13 @@
-import React, { useEffect, useMemo, useCallback } from "react";
+import React, { useEffect, useMemo } from "react";
 import Home from "../pages/Home";
 import { useDispatch, useSelector } from "react-redux"
 import { setTotalPages } from "../features/pagination/paginationSlice";
 import { fetchQueryHistoryAsync } from "../features/queryHistory/historySlice";
-import { countOccurrencesOfSearchTerm } from "../features/highlight/highlighUtils"
 import { setWordMatchesCount } from "../features/highlight/highlightSlice";
 import { setPaginatedResults } from "../features/search/searchSlice";
+import { calculatePaginatedResults } from "../features/pagination/paginationService";
+import { calculateWordMatchCount } from "../features/highlight/highlightService"
 
-const calculatePaginatedResults = (results, currentPage, pageSize) => {
-  const startIndex = (currentPage - 1) * pageSize;
-  const endIndex = startIndex + pageSize;
-  return results.slice(startIndex, endIndex);
-};
-
-const calculateWordMatchCount = (paginatedResults, searchWord) => {
-  const joinResults = paginatedResults.map(({ title }) => title).join(" ");
-  return searchWord ? countOccurrencesOfSearchTerm(searchWord, joinResults) : 0;
-};
 
 const App = () => {
   const dispatch = useDispatch();
